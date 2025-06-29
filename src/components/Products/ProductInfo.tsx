@@ -1,13 +1,13 @@
 import { useState } from "react"
 import ProductModal from "../ProductModal/ProductModal"
 
+//interface de produto que tem o caminho da imagem, e as informações restantes de um produto
 export interface Product {
     imagePath: string,
     name: string,
     description: string,
     price: number,
 }
-//interface de produto que tem o caminho da imagem, e as informações restantes de um produto
 
 export default function ProductInfo({ imagePath, name, price, description} : Product) {
 
@@ -24,12 +24,13 @@ export default function ProductInfo({ imagePath, name, price, description} : Pro
         return Math.floor(price - (price * discount / 100))
     }
 
+    //variavel para setar se o modal está aberto ou não
     const [modal, setModal] = useState<boolean>(false)
 
     return (
         <>
                 <div className="productInfo">
-                <img src={imagePath} alt="" />
+                <img src={imagePath} alt="produto" />
                 <p className='productName'>
                 {name} 
                 <br />

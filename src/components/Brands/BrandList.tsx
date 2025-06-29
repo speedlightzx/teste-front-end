@@ -10,7 +10,6 @@ export default function BrandList() {
                 <Brand />
                 <Brand />
                 <Brand />
-                
             </section>
         </div>
     )

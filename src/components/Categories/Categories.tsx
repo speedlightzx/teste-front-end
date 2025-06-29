@@ -10,6 +10,7 @@ import { useState } from "react";
 
 export default function Categories() {
 
+    //variavel para definir qual categoria está selecionada para fazer a interação
     type categories = 'Tecnologia' | 'Supermercado' | 'Bebidas' | 'Ferramentas' | 'Saúde' | 'Esporte e fitness' | 'Moda'
     const [selectedCategory, setSelectedCategory] = useState<categories>('Tecnologia')
 

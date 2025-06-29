@@ -7,12 +7,12 @@ export default function Footer() {
     return (
         <footer className="footer">
             <div className="social">
-                <img src={logo} alt="" />
+                <img src={logo} alt="logo" />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <section className='midia'>
-                    <img src={insta} alt="" />
-                    <img src={facebook} alt="" />
-                    <img src={linkedin} alt="" />
+                    <img src={insta} alt="insta" />
+                    <img src={facebook} alt="facebook" />
+                    <img src={linkedin} alt="linkedin" />
                 </section>
             </div>
             <div className='line'></div>

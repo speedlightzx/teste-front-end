@@ -3,9 +3,10 @@ import plus from '../../assets/modal/plus.png'
 import minus from '../../assets/modal/minus.png'
 import { useState } from "react";
 import x from '../../assets/modal/x.png'
+
 //importando a interface de produto
 //que tem o caminho da imagem como string, nome como string, descrição como string, e preço como número
-
+//e adicionando para ter uma função
 interface Modal extends Product {
     closeModal: () => void
 }
@@ -30,12 +31,12 @@ export default function ProductModal({ imagePath, name, description, price, clos
         <div className="modalOverlay">
         <div className="productModal">
             <div className="imageModal">
-                <img src={imagePath} alt="" />
+                <img src={imagePath} alt="produto" />
             </div>
             <div className="modal">
 
                 <div className="close" onClick={() => closeModal()}>
-                    <img src={x}/>
+                    <img src={x} alt="close"/>
                 </div>
 
                 <div className="nameAndPrice">
@@ -48,9 +49,9 @@ export default function ProductModal({ imagePath, name, description, price, clos
                 </div>
                 <div className="buying">
                     <div className="quantity">
-                        <img onClick={() => subQuantity()} className="minus" src={minus} alt="" />
+                        <img onClick={() => subQuantity()} className="minus" src={minus} alt="minus" />
                             <h1>{quantity}</h1>
-                        <img onClick={() => addQuantity()} className="plus" src={plus} alt="" />
+                        <img onClick={() => addQuantity()} className="plus" src={plus} alt="plus" />
                     </div>
                     <button
                     onClick={() => closeModal()}

@@ -4,7 +4,7 @@ export default function Partners() {
     return (
         <div className="partners">
             <div className='partner'>
-                <img className='partnerImage' src={partnerImage} alt="" />
+                <img className='partnerImage' src={partnerImage} alt="partnerImage" />
                 <div className='effectPartner'></div>
                 <div className='textPartner'>
                 <h1>Parceiros</h1>
@@ -15,7 +15,7 @@ export default function Partners() {
             </div>
 
             <div className='partner'>
-                <img className='partnerImage' src={partnerImage} alt="" />
+                <img className='partnerImage' src={partnerImage} alt="partnerImage" />
                 <div className='effectPartner'></div>
                 <div className='textPartner'>
                 <h1>Parceiros</h1>

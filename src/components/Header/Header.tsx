@@ -21,32 +21,32 @@ export default function Header() {
         <header>
             <section className='headerTexts'>
                 <div className='text'>
-                    <img src={shieldCheck} alt="" />
+                    <img src={shieldCheck} alt="check" />
                     <h1>Compra <span>100% segura</span></h1>
                 </div>
                 <div className='text'>
-                    <img src={truck} alt="" />
+                    <img src={truck} alt="truck" />
                     <h1><span>Frete grátis</span> acima de R$ 200</h1>
                 </div>
                 <div className='text'>
-                    <img src={creditCard} alt="" />
+                    <img src={creditCard} alt="creditCard" />
                     <h1><span>Parcele</span> suas compras</h1>
                 </div>
             </section>
 
             <section className='search'>
-                <img className='logo' src={logo} alt="" />
+                <img className='logo' src={logo} alt="logo" />
 
                 <div className='searchBar'>
                     <input type="text" placeholder='O que você está buscando?'/>
-                    <img src={glass} alt="" />
+                    <img src={glass} alt="lupa" />
                 </div>
 
                 <div className='account'>
-                    <img className='boxIcon' src={box} alt="" />
-                    <img src={heart} alt="" />
-                    <img src={user} alt="" />
-                    <img src={cart} alt="" />
+                    <img className='boxIcon' src={box} alt="box" />
+                    <img src={heart} alt="heart" />
+                    <img src={user} alt="user" />
+                    <img src={cart} alt="shopping cart" />
                 </div>  
             </section>
 
@@ -77,7 +77,7 @@ export default function Header() {
                 </li>
                 <li onClick={() => setNavItem("ASSINATURA")}
                  className={`${navItem == 'ASSINATURA' ? 'navActiveItem' : ''}`}>
-                    <img src={crown} alt="" />
+                    <img src={crown} alt="crown" />
                     ASSINATURA
                 </li>
             </nav>

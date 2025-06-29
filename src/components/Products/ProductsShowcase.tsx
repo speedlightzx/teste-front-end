@@ -4,6 +4,7 @@ import { JSX, useState } from "react";
 import arrowLeft from "../../assets/categories/arrowLeft.png";
 import arrowRight from "../../assets/categories/arrowRight.png";
 
+//interface que tem todas as informações do json
 interface productInfo {
   photo: string;
   productName: string;
@@ -42,7 +43,7 @@ export default function ProductsShowcase() {
         onClick={() => showLessProducts()}
         className="arrowLeft"
         src={arrowLeft}
-        alt=""/>
+        alt="arrowLeft"/>
 
       <section className="productsShowcase">
         {produtos.products
@@ -61,7 +62,7 @@ export default function ProductsShowcase() {
         onClick={() => showMoreProducts()}
         className="arrowRight"
         src={arrowRight}
-        alt="" />
+        alt="arrowRight" />
     </div>
   );
 }

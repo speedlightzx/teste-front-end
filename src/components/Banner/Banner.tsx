@@ -3,7 +3,7 @@ import banner from '../../assets/banner/banner.png'
 export default function Banner() {
     return (
         <div className='banner'>
-            <img src={banner} alt="" />
+            <img src={banner} alt="banner" />
             <div className='effectBanner'>
                 <div>
             <h1>Venha conhecer nossas promoções</h1>

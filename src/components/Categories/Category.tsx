@@ -10,7 +10,7 @@ export default function Category({ imagePath, categoryName, selectedCategory, se
     return (
         <div onClick={() => setSelectedCategory(categoryName)} className={`category ${selectedCategory == categoryName ? 'selectedCategory' : ''}`}>
             <div className="categoryBorder">
-            <img src={imagePath} alt="" />
+            <img src={imagePath} alt="category image" />
             </div>
             <h1>{categoryName}</h1>
         </div>
