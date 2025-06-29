@@ -1,0 +1,92 @@
+.productsShowcase {
+    width: 1270px;
+    height: 500px;
+    display: flex;
+    margin-top: 3vh;
+    gap: 18px;
+}
+
+.productInfo {
+  width: 304px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  flex: 0 0;
+
+  img {
+    width: 100%;
+    max-width: 278px;
+    height: 100%;
+    max-height: 278px;
+    object-fit: contain;
+  }
+
+  .productName {
+    width: 275px;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+  }
+
+  .price {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .discount {
+    font-size: 16px;
+    color: #808080;
+    text-decoration:line-through;
+    font-weight: normal;
+  }
+
+  .creditPrice {
+    font-size: 12px;
+  }
+
+  .tax {
+    margin-top: auto;
+    font-size: 12px;
+    color: #3442B5;
+  }
+
+  button {
+    width: 275px;
+    height: 44px;
+    background: #3442B5;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    cursor: pointer;
+
+    &:hover {
+      background: #253083;
+    }
+  }
+}
+
+.productsShowcase-container {
+    position: relative;
+
+    .arrowLeft {
+        position: absolute;
+        top: 50%;
+        left: -6vh;
+        cursor: pointer;
+    }
+
+    .arrowRight {
+        position: absolute;
+        top: 50%;
+        right: -7vh;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,67 @@
+.banner {
+    width: 100vw;
+    height: 390px;
+    position: relative;
+    right: 8px;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 390px;
+    z-index: 0;
+  }
+
+  .effectBanner {
+    position: absolute;
+    width: 40%;
+    height: 390px;
+    background: linear-gradient(to right, #000000, transparent);
+    z-index: 10;
+    color: white;
+    
+
+    div {
+        width: 1440px;
+        padding: 8vh;
+        height: 60%;
+
+        h1 {
+            width: 822px;
+            font-size: 48px;
+            font-weight: 500;
+        }
+
+        p {
+            margin-top: 1vh;
+            font-size: 32px;
+
+            span {
+                color: orange;
+                font-weight: bold;
+            }
+        }
+
+        button {
+            margin-top: 4vh;
+            background: #F7CA11;
+            color: black;
+            border: 10px;
+            width: 206px;
+            height: 50px;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: 16px;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 80%;
+            }
+        }
+    }
+  }
+}
+
+.bannerText {
+    position: absolute;
+    
+}
