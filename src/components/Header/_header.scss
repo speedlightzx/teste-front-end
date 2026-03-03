@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.text {
+    color: #9F9F9F;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+
+    h1 {
+        font-size: 12px;
+        align-content: center;
+        justify-self: center;
+        font-weight: 500;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    span {
+        color: #3019B2;
+        font-weight: 600;
+    }
+}
+
+.headerTexts {
+    display: flex;
+    gap: 119px;
+    height: 32px;
+}
+
+.search {
+    display: flex;
+    width: 1280px;
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #F0F0F0;
+    border-bottom: 1px solid #F0F0F0;
+
+    .logo {
+        width: 139px;
+        height: 41.3px;
+    }
+
+    .account {
+        display: flex;
+        width: 216px;
+        height: 32px;
+        gap: 32px;
+
+        .boxIcon {
+            width: 24px;
+            height: 24px;
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            transform: scale(1);
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+     .searchBar {
+
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 22%;
+            right: 20px;
+            width: 28px;
+            height: 28px;
+        }
+
+       input {
+        width: 610px;
+        height: 48px;
+        background: #F6F5F2;
+        border-radius: 10px;
+        border: 1px;
+        gap: 5px;
+        font-size: 14px;
+        padding-left: 20px;
+        &::placeholder {
+            font-weight: 400;
+        }
+    }
+
+
+    }
+    
+}
+
+.headerNav {
+    display: flex;
+    gap: 91px;
+    color: #9F9F9F;
+    list-style: none;
+    height: 40px;
+    align-items: center;
+
+    li {
+        display: flex;
+        gap: 10px;
+        font-size: 12px;
+        font-weight: 600;
+        &:hover {
+            cursor: pointer;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.navActiveItem {
+    color: blue;
+}

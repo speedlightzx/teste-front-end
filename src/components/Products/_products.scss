@@ -1,0 +1,57 @@
+.productCategories {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .subText {
+        font-weight: bold;
+        font-size: 15px;
+        margin: 0;
+        color: #3F3F40;
+    }
+
+    .textWithLines {
+        display: flex;
+        align-items: center;
+        gap: 4vh;
+    }
+
+    .textLine {
+        font-weight: bold;
+        font-size: 30px;
+        color: #3442B5;
+    }
+
+    .line {
+        height: 1px;
+        width: 360px;
+        background: #DEDEDE;
+    }
+
+    nav {
+        display: flex;
+        border: 1px solid #BDBDBD;
+        justify-content: center;
+
+        height: 40px;
+        width: 1280px;
+
+        li {
+            align-items: center;
+            color: #3B3B3B;
+            display: flex;
+            height: 100%;
+            width: 214px;
+            font-size: 16px;
+            justify-content: center;
+            border-right: 1px solid #BDBDBD;
+            cursor: pointer;
+        }
+    }
+}
+
+.selectedProductCategory {
+    color: #3442B5 !important;
+    font-weight: bold;
+}
